@@ -13,10 +13,27 @@ print(type(comment))
 print(type(comment[0]))
 print(type(comment[1]))
 
+likes_count = array.array('i', [10, 5, 3, 7])   #<0>
+print(likes_count)
+print(likes_count[0])
+print(type(likes_count[0]))
+
+try:
+    bad1 = array.array('i', [10, 5, 3, 7.0])        #<1>
+except Exception as e:
+    print(e)
+
+try:
+    bad2 = array.array('i', [10.0, 5.0, 3.0, 7.0])  #<2>
+except Exception as e:
+    print(e)
+
 ## Discussion
 ### Flat Sequences store the value of each item they contain within their own memory space
 ### Thus they are more compact in memory but they are limited to holding primitive values like characters, bytes and numbers
-
+### <0> the first argument 'i', the constructor know we are willing to create an array of integers and only integers
+### <1,2> that's why these two initialization fails because some (#<1>) or all (#<2>) of their elements are not integers.
+### For more on array.array: https://docs.python.org/2/library/array.html
 
 
 ## Problem

@@ -25,7 +25,7 @@ print(comment_content)
 print(likes)
 print(date.month)
 
-
+print(isinstance(date, tuple), isinstance(comment1, tuple), isinstance(comment2, tuple)) #<5>
 
 ## Discussion
 ### <0> Initialization of named tuples is the same as for regurlar tuples and could be nested
@@ -33,3 +33,4 @@ print(date.month)
 ### <2> we can access nested named tuple elements too
 ### <3> named tuples initialization can be done with positional or keyword arguments, or both.
 ### <4> tuple unpacking still applies.
+### <5> in fact a namedtuple is just a special type of tuple.
