@@ -15,7 +15,7 @@ setup(
     long_description=readme,
     author='Junior Teudjio Mbativou',
     author_email='jun.teudjio@gmail.com',
-    url='https://github.com/junteudjio/python3_recipes',
+    url='https://github.com/geekgap-io/python3_recipes',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
